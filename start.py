@@ -1,6 +1,6 @@
 import numpy as np
 
-arr=np.array([1,2,4,5,6])
+arr=np.array([1,2,4,5,6,7,8,9,10])
 a=np.array(34)
 b=np.array([[1,4,5,6],[4,5,6,9]])
 c=np.array([[[1,4,5,6],[4,5,6,8],[7,8,9,8]]])
@@ -14,5 +14,19 @@ print(c.ndim)
 arr_=np.array([1,2,3,4],ndmin=5)
 print(arr_)
 print('number of dimensions:', arr_.ndim)
-
+print(arr[0])
+print(b[1,0])
+print(arr[:3])
+print(arr[1:3])
+print(arr[5:])
+print(arr[-3:])
+print(arr[-7:-5])
+print(arr[::2])
+print(arr[1:8:2])
+print(b[1,2:4])
+print(b[1:3,2:4])
+print(arr.dtype)
+arra=np.array([1.1,3.1,5,6])
+new_arr=arra.astype('i')
+print(new_arr)
 
