@@ -1,6 +1,6 @@
 import numpy as np
 
-arr=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+arr=np.array([1,2,3,4,5,6,7,50,9,10,11,12])
 a=np.array(34)
 b=np.array([[1,4,5,6],[4,5,6,9]])
 c=np.array([[[1,4,5,6],[4,5,6,8],[7,8,9,8]]])
@@ -63,3 +63,17 @@ arr4 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [1
 
 newarr4 = np.array_split(arr4, 3, axis=1)
 print(newarr4)
+z=np.where(arr==4)
+print(z)
+x = np.where(arr%2 == 1)
+print(x)
+e=np.sort(arr)
+print(e)
+
+arr6 = np.array([41, 42, 43, 44])
+
+f = [True, False, True, False]
+
+newarr3 = arr6[f]
+
+print(newarr3) 
